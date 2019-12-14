@@ -30,7 +30,6 @@
 
     const CSLibrary = new CSInterface();
     const hostEnv = CSLibrary.getHostEnvironment();
-    //const appTempFfolderPath = CSLibrary.getSystemPath(SystemPath.EXTENSION) + "/temp/" + hostEnv.appId + "/";
 
     /**+++++++++++++++++++++++++++++++++++++++++++++++++**/
 
@@ -49,23 +48,12 @@
     const fs = cep_node.require('fs');
     const rimraf = cep_node.require("rimraf");
 
-    /**+++++++++++++++++++++++++++++++++++++++++++++++++**/
-
-    async function testFunction(){
-        const test = await jsxFn("testFunction()");
-        alert(test);
-    }
-
-    /**+++++++++++++++++++++++++++++++++++++++++++++++++**/
-
     async function exportMiroZIP() {
 
         const env = hostEnv.appId;
         const scale = document.querySelector('#scale').value;
 
         const data = await jsxFn("getPages()", { env, scale });
-
-        //return alert(JSON.stringify(data));
 
         const path = data.path.replace(/\.[^\/]*$/g,'') + '/';
         fs.mkdirSync(path);
