@@ -1,0 +1,2 @@
+<p>You can download PS-Miro-Extension from <a href="https://drive.google.com/uc?id=1qV5To-hAdUa4fEW3pqyE4owywPDDa96m&export=download">source</a> and install it with <a href="https://zxpinstaller.com">ZXPinstaller</a></p>
+<p>In the future, PS-Miro-Extension will be available in Adobe Exchange</p>
